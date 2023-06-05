@@ -1,3 +1,1 @@
-#### IN ACTION
-
-[Portfolio](https://gatsby-strapi-portfolio-project.netlify.app/)
+A simple react application that displays experience of a web developer in his/her portfolio website.
