@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaAngleDoubleRight } from "react-icons/fa";
 
 const url = "https://course-api.com/react-tabs-project";
@@ -8,7 +8,7 @@ function App() {
   const [jobs, setJobs] = useState([]);
   const [value, setValue] = useState(0);
 
-  async function fetchJobs() {
+  const fetchJobs = async () => {
     try {
       setIsLoading(true);
       const res = await fetch(url);
@@ -17,8 +17,9 @@ function App() {
       setIsLoading(false);
     } catch (error) {
       console.log(error);
+      setIsLoading(false);
     }
-  }
+  };
 
   useEffect(() => {
     fetchJobs();
@@ -36,7 +37,7 @@ function App() {
   return (
     <section className="section">
       <div className="title">
-        <h2>Experience</h2>
+        <h2>Work Experience</h2>
         <div className="underline"></div>
       </div>
       <div className="jobs-center">
