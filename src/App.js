@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaAngleDoubleRight } from "react-icons/fa";
 
-const url = "https://projects-api-server.onrender.com/portfolio-experience";
+const url = "https://www.course-api.com/react-tabs-project";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
